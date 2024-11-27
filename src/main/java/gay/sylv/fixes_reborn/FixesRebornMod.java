@@ -19,6 +19,6 @@ public class FixesRebornMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello modmuss world!");
+		LOGGER.info("Hello Tech Reborn world!");
 	}
 }
