@@ -49,9 +49,11 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	
 	// We use Fabric Loader at compile-time for the final mod...
-//	modCompileOnly "net.fabricmc:fabric-loader:${project.loader_version}"
+	modCompileOnly "net.fabricmc:fabric-loader:${project.loader_version}"
 	// ...and Quilt Loader at runtime for testing.
-	modImplementation "org.quiltmc:quilt-loader:${project.quilt_loader_version}"
+	modLocalRuntime "org.quiltmc:quilt-loader:${project.quilt_loader_version}"
+	modLocalRuntime "org.quiltmc:quilt-config:1.3.1"
+	modLocalRuntime "org.quiltmc:quilt-json5:1.0.4+final"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modLocalRuntime "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
