@@ -1,5 +1,5 @@
 # Fixes Reborn
-A one-mixin-style mod that fixes portability issues in Reborn Core.
+A one-mixin-style mod that fixes portability issues in Reborn Core, making it compatible with more loaders (e.g. Quilt or Connector).
 
 ## Usage
 To use this mod, simply add it to your mods folder along with Tech Reborn or Reborn Core.
