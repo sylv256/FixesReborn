@@ -2,10 +2,7 @@ package gay.sylv.fixes_reborn.fixin;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-import net.minecraft.server.network.ServerPlayerEntity;
-import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import reborncore.common.screen.ServerPlayerEntityScreenHandlerHelper;
 
@@ -19,8 +16,6 @@ import static gay.sylv.fixes_reborn.fixin_impl.Impl_ServerPlayerEntityScreenHand
 /// This replaces the code with portable, best-practice code.
 @Mixin(ServerPlayerEntityScreenHandlerHelper.class)
 public class Fixin_ServerPlayerEntityScreenHandlerHelper {
-	@Shadow @Final private static Class<?> CLAZZ;
-	
 	@WrapOperation(
 			method = "<clinit>",
 			at = @At(
@@ -40,6 +35,6 @@ public class Fixin_ServerPlayerEntityScreenHandlerHelper {
 			)
 	)
 	private static VarHandle fixFindVarHandle(MethodHandles.Lookup instance, Class<?> receiver, String name, Class<?> type, Operation<VarHandle> original) {
-		return original.call(instance, Fixin_ServerPlayerEntityScreenHandlerHelper.CLAZZ, FIELD_NAME, ServerPlayerEntity.class);
+		return original.call(instance, receiver, FIELD_NAME, type);
 	}
 }
