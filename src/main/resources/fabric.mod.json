@@ -1,41 +1,38 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "fixes_reborn",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Fixes Reborn",
+	"description": "A one-mixin-style mod that fixes portability issues in Reborn Core.",
 	"authors": [
-		"Me!"
+		"Sylv"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://sylv.gay/",
+		"sources": "https://github.com/sylv256/FixesReborn"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/fixes_reborn/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"gay.sylv.fixes_reborn.FixesRebornMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"gay.sylv.fixes_reborn.FixesRebornModClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"fixes_reborn.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "fixes_reborn.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
 		"fabricloader": ">=0.16.7",
-		"minecraft": "~1.21.3",
+		"minecraft": "~1.21.1",
 		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"reborncore": ">=5.11.13"
 	}
 }

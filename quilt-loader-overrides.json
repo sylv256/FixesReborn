@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "overrides": [
+    {
+      "path": "<mods>/TechReborn-5.11.13.jar!/META-INF/jars/RebornCore-5.11.13.jar",
+      "depends": [],
+      "breaks": [
+        {
+          "remove": {
+            "id": "quilt_loader"
+          }
+        }
+      ]
+    }
+  ]
+}

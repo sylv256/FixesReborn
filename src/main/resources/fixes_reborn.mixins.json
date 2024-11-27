@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "gay.sylv.fixes_reborn.fixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "Fixin_ServerPlayerEntityScreenHandlerHelper"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
