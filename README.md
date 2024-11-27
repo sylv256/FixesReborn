@@ -80,3 +80,17 @@ Be sure to replace "`<REPLACE THIS 1>`" and "`<REPLACE THIS 2>`" with the printe
   ]
 }
 ```
+
+## FAQ
+### Q: I'm getting an error that says Reborn Core requires Quilt Loader any version!
+Follow the steps in [Quilt Usage](#quilt-usage).
+### Q: The mod was marked as incompatible with Reborn Core / Tech Reborn.
+Please [make a bug report](https://github.com/sylv256/FixesReborn/issues); I will develop a workaround soon.
+### Q: I got banned from the Team Reborn Discord / Issue Tracker for using this mod!
+I take no responsibility for how you use this mod, but **do not report issues caused by this mod to the Tech Reborn issue tracker, and do not harass Team Reborn developers.**
+### Q: Does this mod work with Quilt/Connector/etc.?
+Probably. If not, [open an issue](https://github.com/sylv256/FixesReborn/issues).
+### Q: Will you backport this mod?
+No. Older versions of Tech Reborn / Reborn Core should work just fine. It was only in the more recent updates of Reborn Core that the mod broke. If you believe this is an error, please [open an issue](https://github.com/sylv256/FixesReborn/issues) and explain why.
+### Q: This mod crashes with Tech Reborn / Reborn Core.
+Ensure that you are using the correct version of Fixes Reborn. If the issue still occurs, please [make a bug report](https://github.com/sylv256/FixesReborn/issues).
